@@ -47,7 +47,6 @@ export const Container: React.FC<ContainerProps> = React.forwardRef(function Pre
         mx['2xl'] = '100%'
     }
 
-    console.log(mx)
     return mx
   },[breakPoint])
 
