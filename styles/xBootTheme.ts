@@ -3,7 +3,6 @@ import { darken } from "polished"
 
 /**
  * WIP : ThemeProvider (@xstyled/styled-components)向けテーマ
- * Dafault Theme
  **/
 
 export const xBootTheme = {
