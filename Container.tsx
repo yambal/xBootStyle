@@ -31,7 +31,7 @@ export const Container: React.FC<ContainerProps> = React.forwardRef(function Pre
       xl: 'calc(1280px * 0.95)',
       "2xl": 'calc(1536px * 0.95)'
     }
-/*
+
     switch (breakPoint) {
       case 'fluid':
         return '100%'
@@ -46,7 +46,8 @@ export const Container: React.FC<ContainerProps> = React.forwardRef(function Pre
       case '2xl':
         mx['2xl'] = '100%'
     }
-  */
+
+    console.log(mx)
     return mx
   },[breakPoint])
 
