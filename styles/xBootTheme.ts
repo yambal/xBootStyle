@@ -1,4 +1,3 @@
-import { defaultTheme } from '@xstyled/styled-components'
 import { darken } from "polished"
 
 /**
@@ -6,7 +5,6 @@ import { darken } from "polished"
  **/
 
 export const xBootTheme = {
-  ...defaultTheme,
   fonts: {
     sansSerif: 'system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"',
     monospace: 'SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;'
