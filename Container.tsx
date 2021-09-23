@@ -1,5 +1,6 @@
 import React from "react"
 import { x } from "@xstyled/styled-components"
+import styled from "styled-components"
 
 /**
  * コンテナは、基本的なレイアウト要素であり、特定のデバイスやビューポート内のコンテンツに適切な余白を与え整列させることができます。
@@ -12,7 +13,7 @@ type ContainerProps = typeof x.div.defaultProps & {
   breakPoint?: 'sm' | 'md' | 'lg' | 'xl' | '2xl' | 'fluid'
 }
 
-export const Container: React.FC<ContainerProps> = React.forwardRef(function PreformattedText(
+const _Container: React.FC<ContainerProps> = React.forwardRef(function PreformattedText(
   {
     breakPoint,
     children,
@@ -63,3 +64,5 @@ export const Container: React.FC<ContainerProps> = React.forwardRef(function Pre
     </x.div >
   )
 })
+
+export const Container = styled(_Container)``
