@@ -26,6 +26,7 @@ export const xBootTheme = {
     white: "#ffffff",
     dark: "#212529",
     primary: "#0d6efd",
+    primaryDarken: darken(0.1, "#0d6efd"),
     light: "#f8f9fa",
     markBg: "#fcf8e3",
     link: "#0d6efd",

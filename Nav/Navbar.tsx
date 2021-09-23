@@ -5,6 +5,7 @@ import styled　from "styled-components"
 import { Link } from "gatsby"
 import { NavItem } from "./NavItem"
 import { xBootTheme } from "../styles/xBootTheme"
+import { Button } from "../buttons/Button"
 
 const NavbarNav = styled(x.nav)`
   ${Container} {
@@ -78,12 +79,13 @@ export const Navbar: React.FC<NavbarProps> = React.forwardRef(function Preformat
     >
       <Container>
         {brand && brand}
-        <x.button
+        <Button
+          color={restProps.color}
           onClick={onMenuExpandToggle}
           display={{
             md: "none"
           }}
-        >-</x.button>
+        >-</Button>
         <x.div
           display={{
             _: isMenuExpanded ? "block" : "none",
