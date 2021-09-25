@@ -33,7 +33,7 @@ const NavbarNav = styled(x.nav)`
       text-decoration: none;
       opacity: 0.55;
       transition: opacity 0.25s;
-      &:hover {
+      &:hover, &.active {
         opacity: 1;
       }
     }
@@ -46,11 +46,13 @@ const NavbarNav = styled(x.nav)`
 
 export type NavbarProps = typeof x.nav.defaultProps & {
   brand?: React.ReactNode
+  menuLinks?: React.ReactNode[]
 }
 
 export const Navbar: React.FC<NavbarProps> = React.forwardRef(function PreformattedText(
   {
     brand,
+    menuLinks,
     children,
     ...restProps
   },
@@ -105,8 +107,11 @@ export const Navbar: React.FC<NavbarProps> = React.forwardRef(function Preformat
             mb="0"
             listStyleType="none"
           >
-            <NavItem as="li"><Link to="/">1111</Link></NavItem>
-            <NavItem as="li"><Link to="/">222</Link></NavItem>
+            {menuLinks && menuLinks.map((menuLink) => {
+              return (
+                <NavItem as="li">{menuLink}</NavItem>
+              )
+            })}
           </x.ul>
           <x.div>
             {children}
