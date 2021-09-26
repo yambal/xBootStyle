@@ -24,18 +24,19 @@ const NavbarNav = styled(x.nav)`
     text-decoration: none;
     white-space: nowrap;
   }
+`
 
-  ${NavItem} {
-    a {
+const Menus = styled(x.div)`
+  a {
+    color: inherit;
+    display: block;
+    padding: .5rem;
+    text-decoration: none;
+    opacity: 0.55;
+    transition: opacity 0.25s;
+    &:hover, &.active {
       color: inherit;
-      display: block;
-      padding: .5rem;
-      text-decoration: none;
-      opacity: 0.55;
-      transition: opacity 0.25s;
-      &:hover, &.active {
-        opacity: 1;
-      }
+      opacity: 1;
     }
   }
 `
@@ -88,7 +89,7 @@ export const Navbar: React.FC<NavbarProps> = React.forwardRef(function Preformat
             md: "none"
           }}
         >-</Button>
-        <x.div
+        <Menus
           display={{
             _: isMenuExpanded ? "block" : "none",
             md: "flex"
@@ -116,7 +117,7 @@ export const Navbar: React.FC<NavbarProps> = React.forwardRef(function Preformat
           <x.div>
             {children}
           </x.div>
-        </x.div>
+        </Menus>
       </Container>
     </NavbarNav>
   )
