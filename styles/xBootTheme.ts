@@ -9,7 +9,9 @@ export const xBootTheme = {
   ...defaultTheme,
   fonts: {
     sansSerif: 'system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"',
-    monospace: 'SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;'
+    monospace: 'SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;',
+    notoSans: '"Noto Sans JP", sans-serif;',
+    sourceCode: '"Source Code Pro", monospace;',
   },
 
   fontSizes: {

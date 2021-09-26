@@ -8,6 +8,8 @@ import { th } from "@xstyled/styled-components"
  * thを使用しているので、xBootTheme を ThemeProvider(@xstyled/styled-components)に適用する
  */
 export const xBootGlobalStyle = css`
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500&family=Source+Code+Pro&display=swap');
+
   *,
   *::before,
   *::after {
@@ -20,7 +22,7 @@ export const xBootGlobalStyle = css`
 
   body {
     margin: 0;
-    font-family: ${th.font("sansSerif")};
+    font-family: ${th.font("notoSans")};
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
@@ -159,7 +161,7 @@ export const xBootGlobalStyle = css`
   code,
   kbd,
   samp {
-    font-family: ${th.font("monospace")};
+    font-family: ${th.font("sourceCode")};
     unicode-bidi: bidi-override;
   }
 
