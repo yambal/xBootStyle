@@ -6,7 +6,7 @@ import styled from "styled-components"
  * WIP 
  */
 
-type ButtonProps = typeof x.button.defaultProps & {
+export type ButtonProps = typeof x.button.defaultProps & {
   valiant?: 'primary'
 }
 
